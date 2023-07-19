@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+// Snippet 1:
+const add = (a, b) => {
+  return a + b;
+};
+
+const result1 = add(3, 4);
+// Question 1: What is the value of the result1?
+// Answer 1: The value of result1 is 7.
+console.log("Snippet 1 - Result:", result1);
+
+
+// Snippet 2:
+const greet = (name) => {
+  return { name };
+};
+
+const message = greet("Alice");
+// Question 2: What is the value of the message?
+// Answer 2: The value of message is an object with a property "name" containing the value "Alice".
+console.log("Snippet 2 - Result:", message);
+
+
+// Snippet 3:
+const calculateArea = (radius) => {
+  const PI = 3.14159;
+  const area = PI * radius * radius;
+  return area;
+};
+
+const area = calculateArea(5);
+// Question 3: What is the value of area?
+// Answer 3: The value of area is approximately 78.53975 (calculated as PI * 5 * 5).
+console.log("Snippet 3 - Result:", area);
+
+
+// Snippet 4:
+const multiply = (a, b) => a * b;
+const result2 = multiply(2, 5);
+// Question 4: What is the value of the result2?
+// Answer 4: The value of result2 is 10 (calculated as 2 * 5).
+console.log("Snippet 4 - Result:", result2);
+
+
+// Snippet 5:
+const isEven = (num) => {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+const evenNumber = isEven(8);
+// Question 5: What is the value of evenNumber?
+// Answer 5: The value of evenNumber is true since 8 is an even number (8 % 2 === 0).
+console.log("Snippet 5 - Result:", evenNumber);
+
+
+// Snippet 6:
+const sayHello = () => {
+  return "Hello!";
+};
+
+const hello = sayHello();
+// Question 6: What is the value of hello?
+// Answer 6: The value of hello is the string "Hello!" returned by the sayHello function.
+console.log("Snippet 6 - Result:", hello);
+
+
+// Snippet 7:
+const calculateSquare = (num) => num * num;
+const squaredNumber = calculateSquare(4);
+// Question 7: What is the value of squaredNumber?
+// Answer 7: The value of squaredNumber is 16 (calculated as 4 * 4).
+console.log("Snippet 7 - Result:", squaredNumber);
+
+
+// Snippet 8:
+const divide = (a, b) => {
+  if (b === 0) {
+    return "Error: Division by zero.";
+  }
+  return a / b;
+};
+
+const result3 = divide(10, 2);
+const result4 = divide(8, 0);
+// Question 8: What are the values of result3 and result4?
+// Answer 8: The value of result3 is 5 (calculated as 10 / 2).
+// Answer 9: The value of result4 is "Error: Division by zero." since dividing by zero is not allowed.
+console.log("Snippet 8 - Result:", result3, result4);
+
+
+	</script>
+	<script src="./anonymous_functions.js"></script>
+	<script src="./arrow_function.js"></script>
+</body>
+</html>
